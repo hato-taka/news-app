@@ -7,8 +7,8 @@ const client = axios.create({
   baseURL: BASE_URL,
   params: {
     apiKey: API_KEY,
-    country: "jp",
-    language: "ja",
+    country: "us",
+    // language: "ja",
   },
 });
 
@@ -21,3 +21,11 @@ export const fetchTopHeadlines = async () => {
     throw error;
   }
 };
+
+const func = async() => {
+    const res = await fetchTopHeadlines()
+    console.log(res)
+    return res
+}
+
+console.log(func())

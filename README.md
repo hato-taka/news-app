@@ -47,6 +47,65 @@ https://newsapi.org/
 
 ![image](https://github.com/user-attachments/assets/c841b746-0abb-4ca4-9251-28477517b0f9)
 
+## 主なAPI仕様
+
+<details>
+
+<summary>APIの仕様</summary>
+
+NewsAPIは、世界中のニュース記事を検索・取得できる強力なRESTful APIです。以下にNewsAPIの主な仕様を詳しく説明します。
+
+## エンドポイント
+
+NewsAPIには主に2つの重要なエンドポイントがあります：
+
+1. `/v2/top-headlines`: 最新のトップニュースを取得
+2. `/v2/everything`: キーワードに基づいて記事を検索
+
+## 主要なパラメータ
+
+- `q`: 検索キーワード
+- `country`: 国コード (例: 'us', 'jp')
+- `category`: カテゴリ (例: 'business', 'technology')
+- `sources`: ニュースソース (例: 'bbc-news', 'cnn')
+- `language`: 言語コード (例: 'en', 'ja')
+- `from`: 検索開始日
+- `to`: 検索終了日
+- `sortBy`: ソート順 ('relevancy', 'popularity', 'publishedAt')
+- `pageSize`: 1ページあたりの記事数 (最大100)
+- `page`: ページ番号
+
+## レスポンス形式
+
+APIはJSON形式でレスポンスを返します。主な構造は以下の通りです：
+
+```json
+{
+  "status": "ok",
+  "totalResults": 123,
+  "articles": [
+    {
+      "source": {
+        "id": "bbc-news",
+        "name": "BBC News"
+      },
+      "author": "John Doe",
+      "title": "Article Title",
+      "description": "Article description",
+      "url": "https://www.example.com/article",
+      "urlToImage": "https://www.example.com/image.jpg",
+      "publishedAt": "2024-12-19T12:00:00Z",
+      "content": "Article content..."
+    },
+    // More articles...
+  ]
+}
+```
+
+</details>
+
+
+## 環境変数について
 ＊Expoプロジェクトでは、公開する環境変数の名前をEXPO_PUBLIC_で始める必要があります  
 アプリケーションコード内で直接process.envを使用して環境変数にアクセスできます
 ```ts
