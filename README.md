@@ -23,12 +23,24 @@ expo-cliのグローバルインストールは推奨されなくなりました
 
 ## install
 
+パッケージのinstall
+```bash
+npx expo install <package-name>
+```
+
 ## export
 
 # perplexity
 詳細はこちら: 
 https://www.perplexity.ai/search/react-native-te-ri-ben-yu-none-xcQ0xmWlQNmZyvjohlqKtQ
 
+
+# 開発手順
+
+## 必要なライブラリのインストール
+```bash
+npx expo install axios react-native-webview @react-navigation/native @react-navigation/stack
+```
 
 
 # Welcome to your Expo app 👋
