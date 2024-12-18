@@ -1,3 +1,36 @@
+# 環境構築
+
+新しいプロジェクトを作成する際は、以下のコマンドを使用します:
+
+```bash
+npx create-expo-app your-project-name
+```
+
+## expo-cliの非推奨化
+expo-cliのグローバルインストールは推奨されなくなりました69。これは以下の理由によります:
+- 新しいExpo CLIがプロジェクト内のexpoパッケージにバンドルされるようになった
+- より柔軟で一貫性のある開発環境を提供するため
+- Node.jsの新しいバージョン（特にNode.js 17以降）をサポートするため
+
+# npx expo <command>
+
+## start
+開発サーバーを起動します。
+
+## run:ios / run:android
+
+## prebuild
+
+## install
+
+## export
+
+# perplexity
+詳細はこちら: 
+https://www.perplexity.ai/search/react-native-te-ri-ben-yu-none-xcQ0xmWlQNmZyvjohlqKtQ
+
+
+
 # Welcome to your Expo app 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
