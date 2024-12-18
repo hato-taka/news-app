@@ -7,7 +7,7 @@ npx create-expo-app your-project-name
 ```
 
 ## expo-cliの非推奨化
-expo-cliのグローバルインストールは推奨されなくなりました69。これは以下の理由によります:
+expo-cliのグローバルインストールは推奨されなくなりました。これは以下の理由によります:
 - 新しいExpo CLIがプロジェクト内のexpoパッケージにバンドルされるようになった
 - より柔軟で一貫性のある開発環境を提供するため
 - Node.jsの新しいバージョン（特にNode.js 17以降）をサポートするため
@@ -47,6 +47,12 @@ https://newsapi.org/
 
 ![image](https://github.com/user-attachments/assets/c841b746-0abb-4ca4-9251-28477517b0f9)
 
+＊Expoプロジェクトでは、公開する環境変数の名前をEXPO_PUBLIC_で始める必要があります  
+アプリケーションコード内で直接process.envを使用して環境変数にアクセスできます
+```ts
+const apiKey = process.env.EXPO_PUBLIC_API_KEY;
+console.log(apiKey);
+```
 
 # Welcome to your Expo app 👋
 
