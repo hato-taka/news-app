@@ -42,6 +42,11 @@ https://www.perplexity.ai/search/react-native-te-ri-ben-yu-none-xcQ0xmWlQNmZyvjo
 npx expo install axios react-native-webview @react-navigation/native @react-navigation/stack
 ```
 
+## newsAPIの登録
+https://newsapi.org/
+
+![image](https://github.com/user-attachments/assets/c841b746-0abb-4ca4-9251-28477517b0f9)
+
 
 # Welcome to your Expo app 👋
 
